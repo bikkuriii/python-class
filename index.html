@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c35">
+  <title>旅途筆記｜台灣景點指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">✦</span>旅途筆記</a>
+    <span class="edition">TAIWAN · CURATED GUIDE</span>
+    <a class="plan-link" href="#destinations">開始探索 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">慢慢走，剛剛好</p>
+      <h1>把旅行的每一刻<br><em>安放在對的地方。</em></h1>
+      <p class="hero-copy">從天氣、穿搭到一張好照片的角度，為你整理值得出發的台灣風景。</p>
+      <form class="search" id="search-form">
+        <span>⌕</span><input id="search-input" type="search" placeholder="想去哪裡？例如：山、九份、日月潭" aria-label="搜尋景點">
+        <button type="submit">搜尋景點</button>
+      </form>
+      <div class="hero-notes"><span>01 / 今日精選</span><span>依天氣給你的在地建議</span></div>
+      <div class="sun"></div><div class="mountain one"></div><div class="mountain two"></div><div class="mist"></div>
+    </section>
+
+    <section class="intro" id="destinations">
+      <div><p class="eyebrow">CURATED FOR YOUR WEEKEND</p><h2>不只抵達，更要好好感受。</h2></div>
+      <p>每張景點卡都替你備好出發前最需要的資訊。點開看看，讓行程少一點查找，多一點留白。</p>
+    </section>
+    <section class="destination-grid" id="destination-grid" aria-live="polite"></section>
+    <section class="empty" id="empty-state" hidden><p id="empty-copy"></p><button id="reset-search">查看全部精選</button></section>
+    <section class="quote"><p>「真正的旅行，不是抵達新的地方，<br>而是用新的眼光看世界。」</p><span>— MARCEL PROUST</span></section>
+  </main>
+  <footer><a class="brand" href="index.html"><span class="brand-mark">✦</span>旅途筆記</a><p>給願意慢慢走的人 · 2026</p></footer>
+  <script src="static/app.js"></script>
+</body>
+</html>
